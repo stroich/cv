@@ -306,6 +306,10 @@ section.education .contacts-item:before{
         padding: 5px;
     }
 
+    .contacts-item{
+        font-size: 14px;
+    }
+
     .listFooter{
         width: 50%;
         justify-content: space-around;
