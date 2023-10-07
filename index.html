@@ -22,9 +22,6 @@
                     <a class="nav-link" href="#skills">SKILLS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#code">CODE</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#education">EDUCATION</a>
                 </li>
                 <li class="nav-item">
@@ -57,11 +54,15 @@
     </div>
 </header>
 <main>
-    <div class="flex">
+    <div class="container-text">
         <section id="about" class="about">
             <h2>About Me</h2>
-            <div class="container">
-                <p>Personal qualities: purposefulness, sociability, resistance to stress. Interested in development in the field of front-end development. High self-motivation.I am ready to constantly learn something new.</p>
+            <div class="container container-content">
+                <p>I'm Mariya, a junior front-end developer with a background in economics. My journey into software development began with the It-Academy's basic front-end class, where I gained proficiency in HTML and CSS. I've recently completed the School's fundamental JavaScript course and am now deeply immersed in learning React within the same program.</p>
+
+                <p>My experience as an economist has given me a unique set of skills, including data analysis, strategic thinking, and a deep understanding of market dynamics. I believe that this diverse background helps me approach front-end development more comprehensively, considering both creative design and business goals, to create interfaces that are equally effective and appealing.</p>
+
+                   <p> I've already made a significant contribution to development by updating the official website of an organization and building a corporate website for a legal firm from scratch.Thank you for considering my potential!</p>
             </div>
         </section>
         <section id="contacts" class="contacts">
@@ -82,30 +83,15 @@
             <div class="container">
                 <ul>
                     <li class="contacts-item">HTML</li>
-                    <li class="contacts-item">CSS</li>
+                    <li class="contacts-item">CSS, CSS preprocessors</li>
                     <li class="contacts-item">JavaScript</li>
                     <li class="contacts-item">Typescript</li>
+                    <li class="contacts-item">React</li>
+                    <li class="contacts-item">Redux Toolkit</li>
                     <li class="contacts-item">Node js</li>
                     <li class="contacts-item">Bootstrap</li>
                     <li class="contacts-item">Git</li>
                 </ul>
-            </div>
-        </section>
-        <section id="code" class="code">
-            <h2>Code Example</h2>
-            <div class="container">
-                <code>
-                    let browser=prompt("Browser");<br>
-                    if (browser=="Edge"){<br>
-                    alert("You've got the Edge!");<br>
-                    }<br>
-                    else if (browser=='Chrome'||browser=='Firefox'){<br>
-                    alert( 'Okay we support these browsers too' );<br>
-                    }<br>
-                    else {<br>
-                    alert( 'We hope that this page looks ok!' );<br>
-                    }<br>
-                </code>
             </div>
         </section>
         <section id="education" class="education">
@@ -115,9 +101,13 @@
                 <p>Belarusian State Technological University</p>
                 <h3>Courses:</h3>
                 <ul>
-                    <li class="contacts-item">HTML Academy</li>
                     <li class="contacts-item">Website development with html, css and javascript (108 academic hours)</li>
-                    <li class="contacts-item">JS/FE PRE-SCHOOL 2022Q4 (JAVASCRIPT)</li>
+                    <li class="contacts-item">
+                        <a href="https://app.rs.school/certificate/ioppm2lc">JS/FE PRE-SCHOOL 2022Q4 (JAVASCRIPT)</a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="https://app.rs.school/certificate/1w6r7bqj">JAVASCRIPT/FRONT-END 2023Q1 (JAVASCRIPT)</a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -148,6 +138,12 @@
                     <img class="project-img" src="assets/project_Bayan.png" alt="project css bayan">
                   </a>
                 </div>
+                <div class="project">
+                    <h3 class="project-name"> Project RSS-CSS-Selector </h3>
+                    <a class="project-link" href="https://rolling-scopes-school.github.io/stroich-JSFE2023Q1/RSS-CSS-Selectors/">
+                        <img class="project-img" src="assets/project_Selectors.png" alt="project selectors">
+                    </a>
+                </div>
             </div>
         </section>
         <section id="languages" class="languages">
@@ -163,17 +159,10 @@
 </main>
 <footer class="footer">
     <div class="container footer-container">
-      <p>&copy; 2023 by Stroich Maryia</p>
-      <ul class="listFooter">
-        <li class="listFooter-item">
-          <a class="listFooter-link" href="https://github.com/stroich">Github</a>
-        </li>
-        <li class="listFooter-item">
-          <a class="listFooter-link" href="https://rs.school/js-stage0/">
-            <img class="listFooter-img" src="assets/rs_school_js.svg" alt="rs_school">
-          </a>
-        </li>
-      </ul>
+        <p>&copy; 2023 by Stroich Maryia</p>
+        <p>
+            <a class="listFooter-link" href="https://github.com/stroich">Github</a>
+        </p>
     </div>
 </footer>
 <script src="index.js"></script>
