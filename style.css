@@ -2,7 +2,7 @@
     --header-background: #333030;
     --main-background: #f6ede6;
     --h2-background: #efd7c4;
-    --h1-color:#97877d;
+    --hover-a: #bbb7b5;
     --h4-color:#95928d;
     --width-screen:1024px;
 }
@@ -28,10 +28,11 @@ li{
 
 a{
     text-decoration: none;
+    position: relative;
 }
 
 h1{
-    color: var(--h1-color);
+    color: var(--hover-a);
     margin: 50px auto;
     font-size: 47px;
 }
@@ -135,8 +136,26 @@ header img:hover{
     margin: 20px;
 }
 
-.nav-link:hover{
-    color: var(--h1-color);
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--hover-a);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a:hover{
+    color: var(--hover-a);
 }
 
 .content-name{
@@ -170,16 +189,19 @@ main a{
     color: black;
 }
 
-section.about p{
-    padding-top: 20px;
-    padding-bottom: 20px;
+.container-content{
+    padding: 15px 0;
 }
 
-section.code div{
+.about p{
+    padding: 5px 0;
+}
+
+.code div{
     padding: 0 20px;
 }
 
-section.code div{
+.code div{
     padding: 10px 20px;
 }
 
@@ -198,33 +220,38 @@ section.code div{
     background-size: contain;
 }
 
-section.contacts .contacts-item:first-child:before{
+.contacts .contacts-item:first-child:before{
     background-image: url("assets/icon/1.svg");
 }
 
-section.contacts .contacts-item:nth-child(2):before{
+.contacts .contacts-item:nth-child(2):before{
     background-image: url("assets/icon/2.svg");
 }
 
-section.contacts .contacts-item:nth-child(3):before{
+.contacts .contacts-item:nth-child(3):before{
     background-image: url("assets/icon/3.svg");
 }
 
-section.contacts .contacts-item:nth-child(4):before{
+.contacts .contacts-item:nth-child(4):before{
     background-image: url("assets/icon/4.svg");
 }
 
-section.skills .contacts-item:before{
+.skills .contacts-item:before{
     background-image: url("assets/icon/5.svg");
 }
 
-section.education .contacts-item:before{
+.education .contacts-item:before{
     background-image: url("assets/icon/5.svg");
+}
+
+.contacts-item a:hover{
+    color: #97877d;
 }
 
 .listOfProjects{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
 }
 
 .project{
