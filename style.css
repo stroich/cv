@@ -320,6 +320,10 @@ main a{
         gap: 50px;
     }
 
+    .about p{
+        padding: 5px 10px;
+    }
+
     section.code div{
         padding: 10px;
     }
@@ -369,7 +373,13 @@ main a{
         display: none;
     }
 
+    .header-nav-close.active{
+        justify-content: end;
+    }
+
     .active{
         display: flex;
+        height: 100vh;
+        justify-content: center;
     }
 }
