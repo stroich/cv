@@ -45,7 +45,7 @@ h2{
 }
 
 h3{
-    padding: 10px 20px;
+    padding: 10px 40px;
     font-size: 24px;
 }
 
@@ -89,14 +89,16 @@ p{
 .header-nav-close{
     display: none;
     position: absolute;
-    width: 100%;
     justify-content: end;
     color: wheat;
     z-index: 5;
 }
 
 .header-nav-close-x{
+    width: 50px;
+    height: 50px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .burger{
@@ -190,11 +192,12 @@ main a{
 }
 
 .container-content{
-    padding: 15px 0;
+    padding: 15px 0 15px 40px;
 }
 
 .about p{
     padding: 5px 0;
+    text-align: justify;
 }
 
 .code div{
@@ -240,8 +243,17 @@ main a{
     background-image: url("assets/icon/5.svg");
 }
 
+.education p{
+    padding-left: 40px;
+}
+
 .education .contacts-item:before{
     background-image: url("assets/icon/5.svg");
+}
+
+.contacts-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .contacts-item a:hover{
@@ -277,14 +289,26 @@ main a{
     width: 40%;
 }
 
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
 .listFooter-link{
     color: white;
 }
 
 .listFooter-img{
-    width: 70px;
+    width: 30px;
     opacity: 1.0;
     filter: invert(100);
+}
+
+.listFooter-button{
+    padding: 5px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 950px){
@@ -300,6 +324,7 @@ main a{
     .burger{
         display: flex;
         margin: 10px 20px;
+        cursor: pointer;
     }
 
     .nav-list{
@@ -320,6 +345,10 @@ main a{
         gap: 50px;
     }
 
+    .container-content{
+        padding: 15px;
+    }
+
     .about p{
         padding: 5px 10px;
     }
@@ -337,6 +366,10 @@ main a{
         padding: 5px;
     }
 
+    .contacts-list{
+        display: block;
+    }
+
     .contacts-item{
         font-size: 14px;
     }
@@ -352,7 +385,7 @@ main a{
     }
 
     .listFooter-img {
-        width: 50px;
+        width: 20px;
     }
 
     .content-name{
@@ -373,8 +406,13 @@ main a{
         display: none;
     }
 
+    .languages li{
+        font-size: 14px;
+    }
+
     .header-nav-close.active{
         justify-content: end;
+        align-self: end;
     }
 
     .active{
