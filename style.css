@@ -289,6 +289,13 @@ main a{
     width: 40%;
 }
 
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
 .listFooter-link{
     color: white;
 }
@@ -297,6 +304,11 @@ main a{
     width: 30px;
     opacity: 1.0;
     filter: invert(100);
+}
+
+.listFooter-button{
+    padding: 5px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 950px){
